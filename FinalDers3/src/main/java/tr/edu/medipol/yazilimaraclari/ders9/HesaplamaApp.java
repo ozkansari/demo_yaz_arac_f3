@@ -20,4 +20,11 @@ public class HesaplamaApp {
 	public static int cikarma(int sayi1, int sayi2) {
 		return sayi1 - sayi2;
 	}
+	
+	public static int bolme(int sayi1, int sayi2) {
+		if (sayi2 == 0) {
+			throw new RuntimeException("Payda sifir olamaz");
+		}
+		return sayi1 / sayi2;
+	}
 }
